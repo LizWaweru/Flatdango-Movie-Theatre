@@ -1,4 +1,4 @@
-const apiUrl = "http://localhost:3000";
+const apiUrl = "https://deploy-link-ten.vercel.app";
 
 // Function to fetch and display initial movie details
 const fetchAndDisplayInitialMovie = () => {
