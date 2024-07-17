@@ -1,0 +1,122 @@
+/* Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1514306191717-452ec28c7814?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(255, 235, 205, 0.8); /* blanchedalmond with transparency */
+    color: #333;
+    text-align: center;
+    padding: 10px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Main Content Layout */
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 80px; 
+}
+
+/* Sidebar (Menu) Styles */
+#menu {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    overflow-y: auto; /* Enable scrolling if content exceeds height */
+    transition: width 0.3s ease;
+}
+
+#menu h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+#films {
+    list-style-type: none;
+    padding: 0;
+}
+
+#films .film.item {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#films .film.item:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#films .film.item.sold-out {
+    color: #999; /* Dim color for sold-out films */
+}
+
+/* Movie Details Section Styles */
+#movie-details {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 60%; 
+}
+
+#movie-details h2 {
+    margin-bottom: 10px;
+}
+
+#movie-info {
+    margin-bottom: 20px;
+}
+
+#movie-info img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Purchase Ticket Button Styles */
+#ticket-purchase {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#ticket-purchase:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}
+
+#ticket-purchase:hover {
+    background-color: #0056b3;
+}
